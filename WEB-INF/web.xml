@@ -1,0 +1,33 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" version="2.4">
+	
+	<servlet>
+		<servlet-name>HelloWorld</servlet-name>
+		<servlet-class>com.jspbook.HelloWorld</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>Que</servlet-name>
+		<servlet-class>com.jspbook.Que</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>show</servlet-name>
+		<servlet-class>com.jspbook.show</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HelloWorld</servlet-name>
+		<url-pattern>/HelloWorld</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Que</servlet-name>
+		<url-pattern>/Que</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>show</servlet-name>
+		<url-pattern>/show</url-pattern>
+	</servlet-mapping>		
+
+</web-app>

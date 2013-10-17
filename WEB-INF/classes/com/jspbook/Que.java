@@ -20,7 +20,7 @@ public class Que extends HttpServlet {
 		String info = Name + ";" + Age + ";" + Gender + ";" + Emailaddr + "\n";
 		RandomAccessFile writer =null;
 		try{
-			writer =  new RandomAccessFile("c://data.dat", "rw");
+			writer =  new RandomAccessFile("data.dat", "rw");
 			writer.seek(writer.length());
 			writer.write(info.getBytes());
 		}
